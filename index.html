@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Đoàn Văn Tài</title>
+  </head>
+  <body>
+    <div class="menu">
+      <i class="fa fa-times menu-close"></i>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="#" class="menu-link">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="#about" class="menu-link">Giới Thiệu</a>
+        </li>
+        <li class="menu-item">
+          <a href="#resume" class="menu-link">Bản Thân</a>
+        </li>
+        <li class="menu-item">
+          <a href="#skills" class="menu-link">Kỹ Năng</a>
+        </li>
+        <li class="menu-item">
+          <a href="#portfolio" class="menu-link">Dự Án</a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact" class="menu-link">Liên Hệ</a>
+        </li>
+        <li class="menu-item menu-phone">
+          Phone : <a href="tel: 0985049113">0985.049.113</a>
+        </li>
+        <li class="menu-item menu-btn">
+          <a href="#"> CV PDF </a>
+        </li>
+      </ul>
+    </div>
+
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="#" class="header__image">
+            <img src="./img/logo3.png" alt="logo" class="header__image-logo" />
+          </a>
+        </div>
+        <div class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item active">
+              <div class="header__menu-text">
+                <a href="#home">Home</a>
+              </div>
+            </li>
+            <li class="header__menu-item">
+              <div class="header__menu-text">
+                <a href="#about">Giới Thiệu</a>
+              </div>
+            </li>
+            <li class="header__menu-item">
+              <div class="header__menu-text">
+                <a href="#resume">Bản Thân</a>
+              </div>
+            </li>
+            <li class="header__menu-item">
+              <div class="header__menu-text">
+                <a href="#skills">Kỹ Năng</a>
+              </div>
+            </li>
+            <li class="header__menu-item">
+              <div class="header__menu-text">
+                <a href="#portfolio">Dự Án</a>
+              </div>
+            </li>
+            <li class="header__menu-item">
+              <div class="header__menu-text">
+                <a href="#contact">Liên Hệ</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="header__button">
+          <a href="#" class="header__button-btn"> CV PDF </a>
+          <i class="fa fa-bars header__button-toggle"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="container home__container">
+        <div class="home__content">
+          <p>Xin chào! Mình là</p>
+          <h1 class="home__content-title">Lorem, ipsum dolor.</h1>
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            magnam repellat eveniet provident labore beatae! Error eum sapiente
+            ea obcaecati.
+          </span>
+          <a href="#" class="home__button"
+            >Bắt đầu <i class="fa fa-angle-down"></i
+          ></a>
+        </div>
+
+        <div class="home__video">
+          <video
+            playsinline
+            autoplay
+            muted
+            loop
+            src="./video/video.background.cv.mp4"
+            type="video/mp4"
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__content">
+          <h2 class="about__title title">About Me</h2>
+          <div class="about__list">
+            <div class="about__info">
+              <ul>
+                <li class="about__info-item">
+                  <p class="about__info-icon">
+                    <i class="fa fa-user"></i>
+                    Name:
+                  </p>
+                  <span class="about__info-text">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="about__info-item">
+                  <p class="about__info-icon">
+                    <i class="fa fa-map-marker-alt"></i>
+                    Address:
+                  </p>
+                  <span class="about__info-text">Lorem ipsum dolor sit.</span>
+                </li>
+                <li class="about__info-item">
+                  <p class="about__info-icon">
+                    <i class="fa fa-envelope"></i>
+                    Email:
+                  </p>
+                  <span class="about__info-text">Lorem ipsum dolor sit .</span>
+                </li>
+                <li class="about__info-item">
+                  <p class="about__info-icon">
+                    <i class="fa fa-phone-volume"></i>
+                    Phone:
+                  </p>
+                  <span class="about__info-text">Lorem ipsum dolor sit.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="about__image">
+              <img src="./img/image2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume" id="resume">
+      <div class="container">
+        <h2 class="resume__title title">My Resume</h2>
+
+        <div class="resume__list">
+          <div class="resume__item resume__exp">
+            <div class="resume__item--title resume__exp--title">
+              <h2>EXPERIENCE</h2>
+            </div>
+
+            <div class="resume__content">
+              <div class="resume__inner">
+                <h3 class="resume__inner--title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p class="resume__inner--time">Lorem ipsum dolor sit amet.</p>
+                <span class="resume__inner--desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  magnam accusantium iusto sunt natus blanditiis reprehenderit
+                  quis tenetur dignissimos eligendi!Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Qui magnam accusantium iusto
+                  sunt natus blanditiis reprehenderit quis tenetur dignissimos
+                  eligendi!
+                </span>
+              </div>
+
+              <div class="resume__inner">
+                <h3 class="resume__inner--title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p class="resume__inner--time">Lorem ipsum dolor sit amet.</p>
+                <span class="resume__inner--desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  magnam accusantium iusto sunt natus blanditiis reprehenderit
+                  quis tenetur dignissimos eligendi!Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Qui magnam accusantium iusto
+                  sunt natus blanditiis reprehenderit quis tenetur dignissimos
+                  eligendi!
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume__item resume__education">
+            <div class="resume__content">
+              <div class="resume__inner">
+                <h3 class="resume__inner--title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p class="resume__inner--time">Lorem ipsum dolor sit amet.</p>
+                <span class="resume__inner--desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  magnam accusantium iusto sunt natus blanditiis reprehenderit
+                  quis tenetur dignissimos eligendi!Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Qui magnam accusantium iusto
+                  sunt natus blanditiis reprehenderit quis tenetur dignissimos
+                  eligendi!
+                </span>
+              </div>
+
+              <div class="resume__inner">
+                <h3 class="resume__inner--title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p class="resume__inner--time">Lorem ipsum dolor sit amet.</p>
+                <span class="resume__inner--desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  magnam accusantium iusto sunt natus blanditiis reprehenderit
+                  quis tenetur dignissimos eligendi!Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Qui magnam accusantium iusto
+                  sunt natus blanditiis reprehenderit quis tenetur dignissimos
+                  eligendi!
+                </span>
+              </div>
+            </div>
+
+            <div class="resume__item--title resume__education--title">
+              <h2>EDUCATION</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="skills__title title">My Skills</h2>
+        <div class="skills__list">
+          <ul class="skills__item">
+            <li class="skills__item-image">
+              <img src="./img/html.png" alt="html" />
+            </li>
+            <li class="skills__item-image">
+              <img src="./img/photoshop.png" alt="html" />
+            </li>
+          </ul>
+          <ul class="skills__item">
+            <li class="skills__item-image">
+              <img src="./img/css3.png" alt="html" />
+            </li>
+            <li class="skills__item-image">
+              <img src="./img/git.png" alt="html" />
+            </li>
+          </ul>
+          <ul class="skills__item">
+            <li class="skills__item-image">
+              <img src="./img/sass.png" alt="html" />
+            </li>
+            <li class="skills__item-image">
+              <img src="./img/bootstrap.png" alt="html" />
+            </li>
+          </ul>
+          <ul class="skills__item">
+            <li class="skills__item-image">
+              <img src="./img/javascript.png" alt="html" />
+            </li>
+            <li class="skills__item-image">
+              <img src="./img/responsive.png" alt="html" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="portfolio__title title">My Portfolio</h2>
+        <div class="portfolio__list">
+          <div class="portfolio__item">
+            <a href="#" class="portfolio__image">
+              <img src="./img/image2.jpg" alt="" />
+              <div class="portfolio__view"><span>View Demo</span></div>
+            </a>
+            <div class="portfolio__info">
+              <h3 class="portfolio__info-title">Lorem ipsum dolor sit amet.</h3>
+              <ul class="portfolio__info-content">
+                <li class="portfolio__info-description">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+                <li class="portfolio__info-responsibility">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+                <li class="portfolio__info-technology">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <a href="#" class="portfolio__image">
+              <img src="./img/image2.jpg" alt="" />
+              <div class="portfolio__view"><span>View Demo</span></div>
+            </a>
+            <div class="portfolio__info">
+              <h3 class="portfolio__info-title">Lorem ipsum dolor sit amet.</h3>
+              <ul class="portfolio__info-content">
+                <li class="portfolio__info-description">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+                <li class="portfolio__info-responsibility">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+                <li class="portfolio__info-technology">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <a href="#" class="portfolio__image">
+              <img src="./img/image2.jpg" alt="" />
+              <div class="portfolio__view"><span>View Demo</span></div>
+            </a>
+            <div class="portfolio__info">
+              <h3 class="portfolio__info-title">Lorem ipsum dolor sit amet.</h3>
+              <ul class="portfolio__info-content">
+                <li class="portfolio__info-description">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+                <li class="portfolio__info-responsibility">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+                <li class="portfolio__info-technology">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <a href="#" class="portfolio__image">
+              <img src="./img/image2.jpg" alt="" />
+              <div class="portfolio__view"><span>View Demo</span></div>
+            </a>
+            <div class="portfolio__info">
+              <h3 class="portfolio__info-title">Lorem ipsum dolor sit amet.</h3>
+              <ul class="portfolio__info-content">
+                <li class="portfolio__info-description">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+                <li class="portfolio__info-responsibility">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+                <li class="portfolio__info-technology">
+                  <strong>Lorem, ipsu:</strong> Lorem ipsum dolor sit amet.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact__container">
+        <h2 class="contact__title title">Contact Me</h2>
+        <span class="contact__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          dolorum sunt natus cupiditate, laborum assumenda delectus debitis ab
+          esse nemo.
+        </span>
+        <div class="contact__list">
+          <div class="contact__info">
+            <h3 class="contact__name">Lorem, ipsum dolor.</h3>
+            <div class="contact__info-location contact__info-item">
+              <i class="fa fa-map-marker-alt"></i>
+              <strong>Location</strong>
+              <p class="contact__info-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="contact__info-phone contact__info-item">
+              <i class="fa fa-phone"></i>
+              <strong>Phone</strong>
+              <p class="contact__info-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="contact__info-face contact__info-item">
+              <i class="fab fa-facebook"></i>
+              <strong>Facebook</strong>
+              <p class="contact__info-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="contact__info-email contact__info-item">
+              <i class="fa fa-envelope"></i>
+              <strong>Email</strong>
+              <p class="contact__info-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div>
+            <form action="javascript:void(0)" class="contact-form">
+              <input
+                type="text"
+                class="contact__input contact__field"
+                placeholder="Nhập vào tên..."
+                required
+              />
+              <input
+                type="email"
+                class="contact__input contact__field"
+                placeholder="Nhập vào email..."
+                required
+              />
+              <textarea
+                class="contact__area contact__field"
+                placeholder="Nhập vào tin nhắn..."
+                required
+                minlength="50"
+              ></textarea>
+              <button type="submit" class="contact__button">Sen Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <span>Đoàn Văn Tài</span>
+        <a href="#" class="footer__backtotop" id="rocket">
+          <i class="fa fa-rocket"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="./script/main.js"></script>
+  </body>
+</html>

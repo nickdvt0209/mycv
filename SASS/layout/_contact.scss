@@ -1,0 +1,81 @@
+.contact {
+  background: $color-blue500;
+  padding: 100px 0 50px;
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: left;
+  }
+  &__desc {
+    display: block;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  &__info {
+    color: $color-secondary;
+    &-item {
+      text-align: left;
+      margin-bottom: 30px;
+      @include flex(center, flex-start, none);
+
+      strong {
+        width: 100px;
+        color: #fff;
+        margin-left: 20px;
+      }
+    }
+  }
+  &__name {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  &__field {
+    padding: 15px 30px;
+    display: block;
+    width: 100%;
+    border: 2px solid rgba(#fff, 0.5);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-bottom: 30px;
+    color: #fff;
+    transition: all 0.2s linear;
+    &::-webkit-input-placeholder {
+      color: #fff;
+    }
+    &::-moz-input-placeholder {
+      color: #fff;
+    }
+    &:focus {
+      border-color: $color-secondary;
+    }
+  }
+  &__area {
+    line-height: 1.55;
+    resize: none;
+    min-height: 100px;
+    border-radius: 4px;
+  }
+
+  &__button {
+    background: linear-gradient(325deg, $color-secondary, $color-primary);
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    &:hover {
+      background: $color-secondary;
+      color: $color-primary;
+    }
+  }
+}

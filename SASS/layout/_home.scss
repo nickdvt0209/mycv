@@ -1,0 +1,54 @@
+.home {
+  background: rgba(#000, 0.4);
+  margin: 0 auto;
+  &__container {
+    max-width: inherit;
+  }
+
+  &__content {
+    color: #fff;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 95px 0;
+
+    p {
+      font-size: 18px;
+    }
+    &-title {
+      font-size: 60px;
+      font-weight: 700;
+      margin: 15px 0 30px 0;
+    }
+    span {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+  &__button {
+    padding: 15px 30px;
+    background-color: $color-secondary;
+    color: $color-primary;
+    font-weight: 700;
+    border-radius: 50px;
+    i {
+      margin-left: 5px;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+    max-width: 100%;
+    video {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+}

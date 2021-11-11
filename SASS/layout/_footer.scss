@@ -1,0 +1,27 @@
+.footer {
+  padding: 30px;
+  background: $color-primary;
+
+  span {
+    font-size: 20px;
+    color: #545454;
+    font-style: italic;
+  }
+  &__backtotop {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translate(-100%, -100%);
+    transition: all 0.3s;
+    i {
+      background: cyan;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 25px;
+      color: #031722;
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px 0px;
+    }
+  }
+}

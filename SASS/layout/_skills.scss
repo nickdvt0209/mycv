@@ -1,0 +1,31 @@
+.skills {
+  background: linear-gradient(135deg, $color-blue400, $color-primary);
+  color: $color-primary;
+  padding: 100px 0;
+  &__list {
+    background: linear-gradient(135deg, $color-blue300, $color-secondary);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 15px;
+    padding: 0 60px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__item {
+    list-style: none;
+
+    &-image {
+      margin: 50px 0;
+      opacity: 50%;
+      cursor: pointer;
+      padding: 10px 50px;
+      transition: all 0.2s linear;
+      &:hover {
+        border-radius: 0 50px 0 50px;
+        opacity: 100%;
+        box-shadow: rgba(0, 0, 0, 0.2) 10px 15px 20px 0px;
+        background-color: $color-secondary;
+        transform: scale(1.2);
+      }
+    }
+  }
+}

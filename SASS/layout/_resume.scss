@@ -1,0 +1,100 @@
+.resume {
+  background-color: $color-blue400;
+  padding: 50px 0;
+
+  &__list {
+    @include flex(center, space-between, wrap);
+  }
+  &__item {
+    width: 50%;
+    @include flex(center, space-between, none);
+
+    &--title {
+      transform: rotate(270deg);
+      padding-bottom: 10px;
+      letter-spacing: 5px;
+      font-size: 30px;
+      width: 20%;
+      color: $color-blue300;
+    }
+  }
+
+  &__inner {
+    padding: 30px;
+    border: 3px dashed $color-primary;
+    border-radius: 5px;
+    margin: 40px 20px;
+    transition: all 0.3s linear;
+    &--title {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    &--time {
+      margin-bottom: 15px;
+    }
+    &:hover {
+      border: 3px solid #00ffff;
+      box-shadow: #626161 3px 3px 20px 0px;
+      margin: 40 px 20px;
+      background: #fff;
+      color: #031722;
+    }
+  }
+  &__exp {
+    &--title {
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 300px;
+        height: 2px;
+        background-color: #65c1c1;
+        position: absolute;
+        top: 62px;
+        left: 5px;
+      }
+      &::before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: $color-secondary;
+        border-radius: 50%;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        z-index: 2;
+        box-shadow: $color-secondary 300px 0 0px 0px;
+      }
+    }
+  }
+
+  &__education {
+    &--title {
+      transform: rotate(90deg);
+      &::after {
+        content: "";
+        display: block;
+        width: 300px;
+        height: 2px;
+        background-color: #65c1c1;
+        position: absolute;
+        bottom: -5px;
+        left: 5px;
+      }
+      &::before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: $color-secondary;
+        border-radius: 50%;
+        position: absolute;
+        top: 52px;
+        left: 0;
+        z-index: 2;
+        box-shadow: $color-secondary 300px 0 0px 0px;
+      }
+    }
+  }
+}

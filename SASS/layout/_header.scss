@@ -1,0 +1,81 @@
+.header {
+  padding: 15px 0;
+  background: rgba(#000, 0.4);
+  font-weight: 500;
+  transition: all 0.3s;
+
+  &__container {
+    @include flex(center, space-between, nowrap);
+  }
+  &__logo {
+    width: 50px;
+    height: 50px;
+  }
+  &__menu {
+    &-list {
+      @include flex(center, space-between, nowrap);
+      list-style: none;
+    }
+    &-item {
+      padding: 0 20px;
+      transition: all 0.2s linear;
+      &:hover {
+        font-weight: 700;
+        color: $color-secondary;
+        .header__menu-text::after {
+          width: 100%;
+        }
+      }
+    }
+    &-text {
+      padding: 10px;
+      position: relative;
+      &::after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background: $color-secondary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.2s linear;
+      }
+    }
+  }
+  &__button {
+    @include flex(center, center, none);
+    &-btn {
+      padding: 10px 25px;
+      background-color: $color-secondary;
+      border-radius: 30px;
+      font-weight: bold;
+      color: $color-primary;
+    }
+    &-toggle {
+      cursor: pointer;
+      font-size: 30px;
+      margin-left: 30px;
+      outline: none;
+      border: none;
+      display: none;
+    }
+  }
+}
+.header__fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  background: $color-primary;
+  color: #fff;
+}
+.active {
+  font-weight: 700;
+  color: $color-secondary;
+  font-size: 18px;
+  .header__menu-text::after {
+    width: 100%;
+  }
+}
+.menu {
+  display: none;
+}

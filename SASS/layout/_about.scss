@@ -1,0 +1,73 @@
+.about {
+  background: linear-gradient(135deg, $color-primary, $color-blue400);
+  color: $color-primary;
+  padding: 100px 0;
+  &__content {
+    background: linear-gradient(135deg, $color-secondary, $color-blue300);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 15px;
+    padding: 50px;
+    border-radius: 30px;
+  }
+  &__list {
+    @include flex(center, space-between, none);
+    gap: 50px;
+  }
+
+  &__info {
+    width: 60%;
+    ul {
+      list-style: none;
+    }
+    &-item {
+      border-bottom: 2px solid $color-primary;
+      margin-bottom: 30px;
+      box-shadow: rgba(0, 0, 0, 0.2) 2px 10px 5px 0px;
+    }
+    &-icon {
+      display: inline-block;
+      background-color: $color-primary;
+      color: #fff;
+      padding: 15px 10px;
+      width: 85px;
+      font-weight: 700;
+    }
+    &-text {
+      margin-left: 20px;
+      color: $color-primary;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  &__image {
+    width: 40%;
+    padding: 15px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-top: 6px solid $color-primary;
+      border-left: 6px solid $color-primary;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-right: 6px solid $color-primary;
+      border-bottom: 6px solid $color-primary;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    img {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 15px;
+      border-radius: 20px;
+    }
+  }
+}
