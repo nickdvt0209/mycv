@@ -6,9 +6,16 @@
     @include flex(center, space-between, none);
     margin-bottom: 50px;
     transition: all 0.2s linear;
+    position: relative;
+
     &:nth-child(even) {
       flex-direction: row-reverse;
       text-align: left;
+      .portfolio__view span {
+        top: 50%;
+        left: unset;
+        right: 0%;
+      }
     }
 
     &:hover {
@@ -16,7 +23,6 @@
       border-radius: 30px;
       .portfolio__info-title {
         color: #fff;
-        // color: $color-primary;
       }
       .portfolio__image {
         box-shadow: none;
@@ -29,7 +35,6 @@
 
   &__image {
     width: 40%;
-    position: relative;
     border-radius: 30px;
     border: 5px solid $color-secondary;
     box-shadow: #626161 3px 3px 20px 0px;
@@ -53,7 +58,7 @@
       line-height: 1.2;
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 18%;
       transform: translate(-50%, -50%);
       cursor: pointer;
       box-shadow: #000 3px 3px 5px 0px;
