@@ -953,6 +953,10 @@ section[id] {
   margin-left: 20px;
 }
 
+.contact__info-item a:hover {
+  color: #031722;
+}
+
 .contact__name {
   font-size: 25px;
   margin-bottom: 50px;
