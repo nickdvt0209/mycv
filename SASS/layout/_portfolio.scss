@@ -90,4 +90,17 @@
       }
     }
   }
+  &__button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid $color-primary;
+    border-radius: 15px;
+    color: $color-primary;
+    font-weight: 700;
+    margin-top: 5px;
+    &:hover {
+      border: 2px solid $color-secondary;
+      color: $color-secondary;
+    }
+  }
 }
