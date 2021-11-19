@@ -167,6 +167,10 @@
       color: $color-primary;
       &:nth-child(even) {
         flex-direction: column;
+        .portfolio__view span {
+          top: 26%;
+          right: 21%;
+        }
       }
     }
     &__image,
@@ -174,6 +178,10 @@
       width: 80%;
       box-shadow: none;
       margin-bottom: 50px;
+    }
+    &__view span {
+      top: 26%;
+      left: 50%;
     }
   }
 
